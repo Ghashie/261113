@@ -54,3 +54,53 @@
     font-size: 2.5rem;
   }
 }
+
+/* Section "Nossa data" */
+.data-section {
+  background-color: #f5f6f1; /* tom clarinho de fundo */
+}
+
+/* Wrapper dos cards (o Bootstrap já ajuda, mas deixo aqui caso queira mexer) */
+/*
+#contador {
+  gap: 1rem;
+}
+*/
+
+/* Card do contador */
+.contador-card {
+  min-width: 120px;
+  padding: 1.4rem 1.6rem;
+  background-color: #5d6d4b;          /* verde fechado */
+  color: #ffffff;
+  border-radius: 0.8rem;
+}
+
+/* Número grande */
+.contador-numero {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* Label: DIAS, HORAS etc */
+.contador-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Local embaixo do contador */
+.contador-local {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5d6d4b;
+}
+
+/* Ajuste mobile */
+@media (max-width: 576px) {
+  .contador-card {
+    min-width: 46%;
+    padding: 1.2rem 0.8rem;
+  }
+}
