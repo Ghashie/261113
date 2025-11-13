@@ -1,8 +1,64 @@
-/* Banner com foto do casal */
+/* ========= PALETA PRINCIPAL (inspirada no convite) ========= */
+:root {
+  --cor-fundo:        #f7f3e9; /* papel bege claro */
+  --cor-fundo-alt:    #f1ede1; /* variação para sections */
+  --cor-verde:        #5f6b4b; /* verde-oliva dos envelopes */
+  --cor-verde-escuro: #424a35;
+  --cor-acento:       #b48a5a; /* tom cera de lacre */
+  --cor-texto:        #3f3a32; /* marrom acinzentado */
+  --cor-texto-suave:  #7b7464;
+}
+
+/* ========= BASE ========= */
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--cor-verde-escuro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--cor-texto);
+}
+
+/* ========= NAVBAR / MENU ========= */
+
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.navbar-brand {
+  color: var(--cor-verde-escuro) !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--cor-texto-suave);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--cor-verde-escuro);
+}
+
+/* ========= HERO / BANNER ========= */
+
 .hero-banner {
   position: relative;
   min-height: 60vh;
-  background-image: url("img/Sem\ título.jpg"); /* coloque sua foto aqui */
+  background-image: url("img/banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -15,8 +71,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.7)
+    rgba(95, 107, 75, 0.35),   /* verde translúcido */
+    rgba(63, 58, 50, 0.7)      /* marrom mais escuro */
   );
 }
 
@@ -24,7 +80,88 @@
   z-index: 1;
 }
 
-/* Cartõezinhos de cores */
+.hero-content .lead,
+.hero-content h1 {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+/* ========= SECTIONS ========= */
+
+section {
+  background-color: transparent;
+}
+
+#mensagem {
+  background-color: var(--cor-fundo); 
+}
+
+#data {
+  background-color: var(--cor-fundo-alt);
+}
+
+#locais {
+  background-color: #ffffff;
+}
+
+#cores {
+  background-color: var(--cor-fundo);
+}
+
+#presenca {
+  background-color: var(--cor-fundo-alt);
+}
+
+#presentes {
+  background-color: #ffffff;
+}
+
+/* ========= BOTÕES ========= */
+
+.btn-primary {
+  background-color: var(--cor-verde);
+  border-color: var(--cor-verde);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--cor-verde-escuro);
+  border-color: var(--cor-verde-escuro);
+}
+
+.btn-outline-secondary {
+  color: var(--cor-verde-escuro);
+  border-color: var(--cor-verde-escuro);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: var(--cor-verde-escuro);
+  color: #ffffff;
+}
+
+/* ========= CARDS / LOCAIS ========= */
+
+.card {
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.card-title {
+  color: var(--cor-verde-escuro);
+}
+
+.card-text {
+  color: var(--cor-texto);
+}
+
+/* ========= PALETA DE CORES (quadradinhos) ========= */
+
 .cor-card {
   padding: 0.5rem;
 }
@@ -32,13 +169,48 @@
 .cor-quadrado {
   width: 100%;
   padding-bottom: 100%;
-  border-radius: 0.75rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.04);
 }
 
-/* Cartões de convidado para o futuro RSVP */
+/* ========= CONTADOR "NOSSA DATA" ========= */
+
+.data-section {
+  /* já usei #data com cor específica acima, mas deixo aqui caso use a classe */
+  background-color: var(--cor-fundo-alt);
+}
+
+.contador-card {
+  min-width: 120px;
+  padding: 1.4rem 1.6rem;
+  background-color: var(--cor-verde);
+  color: #ffffff;
+  border-radius: 0.9rem;
+}
+
+.contador-numero {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.contador-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contador-local {
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cor-verde-escuro);
+}
+
+/* ========= CARDS FUTUROS (RSVP) ========= */
+
 .convidado-card {
-  border-radius: 0.75rem;
-  border: 1px solid #dee2e6;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.06);
   padding: 1rem 1.25rem;
   margin-bottom: 0.75rem;
   background-color: #ffffff;
@@ -46,59 +218,23 @@
 
 .convidado-tipo {
   font-size: 0.9rem;
+  color: var(--cor-texto-suave);
 }
 
-/* Ajuste básico para mobile */
+/* ========= FOOTER ========= */
+
+footer {
+  background-color: var(--cor-verde-escuro);
+  color: #f8f5ec;
+}
+
+/* ========= AJUSTES RESPONSIVOS ========= */
+
 @media (max-width: 576px) {
   .display-3 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
-}
 
-/* Section "Nossa data" */
-.data-section {
-  background-color: #f5f6f1; /* tom clarinho de fundo */
-}
-
-/* Wrapper dos cards (o Bootstrap já ajuda, mas deixo aqui caso queira mexer) */
-/*
-#contador {
-  gap: 1rem;
-}
-*/
-
-/* Card do contador */
-.contador-card {
-  min-width: 120px;
-  padding: 1.4rem 1.6rem;
-  background-color: #5d6d4b;          /* verde fechado */
-  color: #ffffff;
-  border-radius: 0.8rem;
-}
-
-/* Número grande */
-.contador-numero {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
-/* Label: DIAS, HORAS etc */
-.contador-label {
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-/* Local embaixo do contador */
-.contador-local {
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #5d6d4b;
-}
-
-/* Ajuste mobile */
-@media (max-width: 576px) {
   .contador-card {
     min-width: 46%;
     padding: 1.2rem 0.8rem;
