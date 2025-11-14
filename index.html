@@ -34,15 +34,16 @@
         </div>
     </nav>
 
-    <!-- BANNER / HERO -->
+    <!-- HERO / BANNER -->
     <header id="home" class="hero-banner text-center text-white">
         <div class="hero-overlay"></div>
         <div class="container position-relative hero-content">
             <p class="lead mb-1">Nosso casamento</p>
-            <h1 class="display-3 fw-bold">Beatriz & Thiago</h1>
-            <p class="lead mt-2">13/11/2026 • Rio de Janeiro</p>
+            <h1 class="display-3 fw-bold hero-title">Beatriz & Thiago</h1>
+            <p class="lead mt-2">Finalmente um só</p>
         </div>
     </header>
+
 
     <!-- MENSAGEM INTRODUTÓRIA -->
     <section id="mensagem" class="py-5">
@@ -61,91 +62,81 @@
     </section>
 
     <!-- NOSSA DATA / CONTADOR -->
-  <section id="data" class="py-5 bg-light data-section">
-    <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="mb-3">Nossa data</h2>
-        <!-- Data e horário do casamento -->
-        <p id="textoData" class="text-muted mb-4">
-          13/11/2026
-        </p>
-      </div>
-
-      <!-- Cards do contador -->
-      <div id="contador" class="d-flex flex-wrap justify-content-center gap-3 mb-4">
-        <div class="contador-card text-center">
-          <p id="contadorDias" class="contador-numero mb-1">0</p>
-          <p class="contador-label mb-0">DIAS</p>
-        </div>
-
-        <div class="contador-card text-center">
-          <p id="contadorHoras" class="contador-numero mb-1">0</p>
-          <p class="contador-label mb-0">HORAS</p>
-        </div>
-
-        <div class="contador-card text-center">
-          <p id="contadorMinutos" class="contador-numero mb-1">0</p>
-          <p class="contador-label mb-0">MINUTOS</p>
-        </div>
-
-        <div class="contador-card text-center">
-          <p id="contadorSegundos" class="contador-numero mb-1">0</p>
-          <p class="contador-label mb-0">SEGUNDOS</p>
-        </div>
-      </div>
-
-      <!-- Local (igual no print) -->
-      <div class="text-center">
-        <p class="contador-local mb-0">
-          Vila Monsaraz
-        </p>
-      </div>
-    </div>
-  </section>
-
-    <!-- LOCAIS: CERIMÔNIA E FESTA -->
-    <section id="locais" class="py-5 bg-light">
+    <section id="data" class="py-5 bg-light data-section">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2>Cerimônia e festa</h2>
-                <p class="text-muted mb-0">
-                    Endereços e horários certinhos para ninguém se perder.
+            <div class="text-center mb-4">
+                <h2 class="mb-3">Nossa data</h2>
+                <!-- Data e horário do casamento -->
+                <p id="textoData" class="text-muted mb-4">
+                    13/11/2026
                 </p>
             </div>
 
-            <!-- Festa -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Cerimônia e Festa</h3>
-                        <p class="card-text mb-1"><strong>Início da Cerimônia:</strong> 16h30</p>
-                        <p class="card-text mb-1"><strong>Local:</strong> Vila Monsaraz</p>
-                        <p class="card-text"><strong>Endereço:</strong> Estr. do Lameirão Pequeno, 806 - Campo Grande,
-                            Rio de Janeiro</p>
+            <!-- Cards do contador -->
+            <div id="contador" class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                <div class="contador-card text-center">
+                    <p id="contadorDias" class="contador-numero mb-1">0</p>
+                    <p class="contador-label mb-0">DIAS</p>
+                </div>
 
-                        <a class="btn btn-primary btn-sm mt-2" target="_blank"
-                            href="https://maps.app.goo.gl/HKKp5nTmfp2JnVYEA">
-                            Abrir no GPS
-                        </a>
-                    </div>
+                <div class="contador-card text-center">
+                    <p id="contadorHoras" class="contador-numero mb-1">0</p>
+                    <p class="contador-label mb-0">HORAS</p>
+                </div>
+
+                <div class="contador-card text-center">
+                    <p id="contadorMinutos" class="contador-numero mb-1">0</p>
+                    <p class="contador-label mb-0">MINUTOS</p>
+                </div>
+
+                <div class="contador-card text-center">
+                    <p id="contadorSegundos" class="contador-numero mb-1">0</p>
+                    <p class="contador-label mb-0">SEGUNDOS</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Mapa embed opcional depois que tiver o link certo -->
-        <div class="row mt-5">
-            <div class="col-12">
-                <h4 class="mb-3 text-center">Mapa</h4>
-                <div class="ratio ratio-16x9">
-                    <!-- Trocar o src pelo embed real do Google Maps quando tiver -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.120787280701!2d-43.51398292387566!3d-22.908915279253613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be0c2bfec94c1%3A0xe32708e7e81aea65!2sVila%20Monsaraz!5e0!3m2!1spt-BR!2sbr!4v1763042481156!5m2!1spt-BR!2sbr"
-                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            <!-- Local (igual no print) -->
+            <div class="text-center">
+                <p class="contador-local mb-0">
+                    Vila Monsaraz
+                </p>
             </div>
-        </div>
         </div>
     </section>
+
+    <!-- LOCAIS: CERIMÔNIA E RECEPÇÃO -->
+    <section id="locais" class="py-5 locais-clean">
+        <div class="container text-center">
+
+            <!-- linha fininha no topo -->
+            <hr class="locais-divider mb-5" />
+
+            <!-- ícone do local (se não tiver, pode remover a img) -->
+            <div class="mb-4">
+                <img src="img/icone-local.svg" alt="Ícone do local" class="locais-icon" />
+            </div>
+
+            <h2 class="mb-2">Vila Monsaraz</h2>
+
+            <p class="locais-subtitulo mb-2">
+                CERIMÔNIA E RECEPÇÃO
+            </p>
+
+            <p class="locais-data mb-3">
+                <strong>13/11/2026 às 16:30</strong>
+            </p>
+
+            <p class="locais-endereco mb-4">
+                Estr. do Lameirão Pequeno, 806 - Campo Grande, Rio de Janeiro
+            </p>
+
+            <a class="btn btn-outline-primary locais-botao" target="_blank"
+                href="https://maps.app.goo.gl/HKKp5nTmfp2JnVYEA">
+                ABRIR COM GOOGLE MAPS
+            </a>
+        </div>
+    </section>
+
 
     <!-- PALETA DE CORES -->
     <section id="cores" class="py-5">
@@ -302,10 +293,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-4 bg-dark text-white text-center">
+    <footer class="py-4 text-center">
         <div class="container">
             <p class="mb-0 small">
-                Com carinho, Nome1 & Nome2
+                Com carinho, Beatriz & Thiago
             </p>
         </div>
     </footer>

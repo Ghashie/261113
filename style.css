@@ -1,3 +1,6 @@
+/* Fonte personalizada - "Dancing Script" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
 /* ========= PALETA PRINCIPAL (inspirada no convite) ========= */
 :root {
   --cor-fundo:        #f7f3e9; /* papel bege claro */
@@ -20,7 +23,7 @@ body {
 h1, h2, h3, h4, h5 {
   color: var(--cor-verde-escuro);
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  
 }
 
 p {
@@ -58,7 +61,7 @@ p {
 .hero-banner {
   position: relative;
   min-height: 60vh;
-  background-image: url("img/banner.jpg");
+  background-image: url("img/banner.jpg"); /* imagem do banner */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -71,8 +74,8 @@ p {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(95, 107, 75, 0.35),   /* verde translúcido */
-    rgba(63, 58, 50, 0.7)      /* marrom mais escuro */
+    rgba(95, 107, 75, 0.35), /* verde claro */
+    rgba(63, 58, 50, 0.7)     /* marrom esverdeado */
   );
 }
 
@@ -80,9 +83,22 @@ p {
   z-index: 1;
 }
 
-.hero-content .lead,
-.hero-content h1 {
-  text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+/* Estilo do título */
+.hero-title {
+  font-family: "Mea Culpa", cursive;
+  font-size: 5rem;
+  font-weight: 600;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.hero-content .lead {
+  font-size: 1.2rem;
+  color: #f1ede1; /* tom bem suave para o texto */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 /* ========= SECTIONS ========= */
@@ -147,18 +163,67 @@ section {
 
 /* ========= CARDS / LOCAIS ========= */
 
-.card {
-  border-radius: 0.9rem;
-  border: 1px solid rgba(0,0,0,0.04);
+/* Section locais clean */
+.locais-clean {
+  background-color: #f7f3e9; /* mesmo bege do resto do site */
 }
 
-.card-title {
-  color: var(--cor-verde-escuro);
+/* Linha fininha em cima */
+.locais-divider {
+  border: 0;
+  border-top: 1px solid #c6ccb5; /* verde/cinza bem suave */
+  max-width: 96%;
+  margin-inline: auto;
 }
 
-.card-text {
-  color: var(--cor-texto);
+/* Ícone central */
+.locais-icon {
+  width: 64px;
+  height: auto;
+  opacity: 0.9;
 }
+
+/* Título já pega o estilo global dos h2 (verde) */
+
+/* Subtítulo: CERIMÔNIA E RECEPÇÃO */
+.locais-subtitulo {
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7b7464; /* marrom suave */
+}
+
+/* Data */
+.locais-data {
+  font-size: 0.95rem;
+  color: #3f3a32;
+}
+
+/* Endereço */
+.locais-endereco {
+  font-size: 0.9rem;
+  color: #7b7464;
+}
+
+/* Botão clean, só contorno */
+.btn-outline-primary.locais-botao {
+  border-radius: 0;
+  padding-inline: 3rem;
+  padding-block: 0.8rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-color: #5f6b4b;
+  color: #5f6b4b;
+  background-color: transparent;
+}
+
+.btn-outline-primary.locais-botao:hover,
+.btn-outline-primary.locais-botao:focus {
+  background-color: #5f6b4b;
+  color: #ffffff;
+}
+
 
 /* ========= PALETA DE CORES (quadradinhos) ========= */
 
@@ -225,7 +290,13 @@ section {
 
 footer {
   background-color: var(--cor-verde-escuro);
-  color: #f8f5ec;
+  color: #f7f4ed;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: #e0d9c8;
+  font-size: 0.8rem;
 }
 
 /* ========= AJUSTES RESPONSIVOS ========= */
